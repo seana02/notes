@@ -1,15 +1,63 @@
 .top {
-    color: rgb(194, 251, 239)
+    color: rgb(194, 251, 239);
 }
 
 .head {
-    color: rgb(212, 175, 202)
+    color: rgb(212, 175, 202);
 }
 
 .hl1 {
-    color: rgb(238, 66, 102)
+    color: rgb(238, 66, 102);
 }
 
 .hl2 {
-    color: rgb(247, 146, 86)
+    color: rgb(247, 146, 86);
+}
+
+.theme-light .preview address a,
+.theme-light .preview dd a,
+.theme-light .preview dt a,
+.theme-light .preview h1 a,
+.theme-light .preview h2 a,
+.theme-light .preview h3 a,
+.theme-light .preview h4 a,
+.theme-light .preview h5 a,
+.theme-light .preview h6 a,
+.theme-light .preview li a,
+.theme-light .preview p a,
+.theme-light .preview td a,
+.theme-light .preview th a {
+    color: rgb(3, 102, 214);
+}
+
+.theme-light .preview address a:hover,
+.theme-light .preview dd a:hover,
+.theme-light .preview dt a:hover,
+.theme-light .preview h1 a:hover,
+.theme-light .preview h2 a:hover,
+.theme-light .preview h3 a:hover,
+.theme-light .preview h4 a:hover,
+.theme-light .preview h5 a:hover,
+.theme-light .preview h6 a:hover,
+.theme-light .preview li a:hover,
+.theme-light .preview p a:hover,
+.theme-light .preview td a:hover,
+.theme-light .preview th a:hover {
+    color: rgb(3, 95, 199);
+}
+
+.theme-light .preview address a:active,
+.theme-light .preview dd a:active,
+.theme-light .preview dt a:active,
+.theme-light .preview h1 a:active,
+.theme-light .preview h2 a:active,
+.theme-light .preview h3 a:active,
+.theme-light .preview h4 a:active,
+.theme-light .preview h5 a:active,
+.theme-light .preview h6 a:active,
+.theme-light .preview li a:active,
+.theme-light .preview p a:active,
+.theme-light .preview td a:active,
+.theme-light .preview th a:active {
+    color: rgb(3, 88, 184);
 }
