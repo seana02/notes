@@ -1,394 +1,463 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="metadata:tags" content="">
-    <meta name="metadata:attachments" content="">
-    <meta name="metadata:deleted" content="false">
-    <meta name="metadata:favorited" content="false">
-    <meta name="metadata:pinned" content="false">
-    <meta name="metadata:created" content="2021-05-26T01:56:51.711Z">
-    <meta name="metadata:modified" content="2021-05-26T02:06:20.884Z">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="metadata:tags" content="" />
+    <meta name="metadata:attachments" content="" />
+    <meta name="metadata:deleted" content="false" />
+    <meta name="metadata:favorited" content="false" />
+    <meta name="metadata:pinned" content="false" />
+    <meta name="metadata:created" content="2021-05-26T01:56:51.711Z" />
+    <meta name="metadata:modified" content="2021-05-26T02:06:20.884Z" />
     <title>Table of Contents</title>
     <style data-critical="true">
-        * {
-            border-color: inherit
-        }
-        
-        *,
-         ::after,
-         ::before {
-            box-sizing: inherit
-        }
-        
-        html {
-            box-sizing: border-box
-        }
-        
-        *,
-         ::after,
-         ::before {
-            flex-shrink: 1
-        }
-        
-        a,
-        area,
-        button,
-        input,
-        label,
-        select,
-        summary,
-        textarea {
-            touch-action: manipulation
-        }
-        
-        html {
-            font-family: sans-serif;
-            line-height: 1.15;
-            text-size-adjust: 100%
-        }
-        
-        body {
-            margin: 0px
-        }
-        
-        h1 {
-            font-size: 2em;
-            margin: 0.67em 0px
-        }
-        
-        details,
-        menu {
-            display: block
-        }
-        
-        summary {
-            display: list-item
-        }
-        
-        html {
-            font-size: 16px;
-            -webkit-tap-highlight-color: transparent
-        }
-        
-        body,
-        html {
-            height: 100%
-        }
-        
-        body {
-            font-size: 1rem;
-            line-height: 1.375;
-            user-select: none !important
-        }
-        
-        body,
-        input,
-        textarea {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif
-        }
-        
-        body,
-        input,
-        textarea {
-            font-size: 16px
-        }
-        
-        .button,
-        .card,
-        .card-block:not(.multiple),
-        .card-footer:not(.multiple),
-        .card-header:not(.multiple),
-        .centerer,
-        .container,
-        .infobar,
-        .label,
-        .select,
-        .spacer,
-        .tagbox,
-        .widget,
-        address,
-        dl,
-        fieldset,
-        footer,
-        form,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        header,
-        i.icon,
-        img,
-        input,
-        label,
-        ol,
-        p,
-        pre,
-        textarea,
-        ul {
-            position: relative;
-            margin: 0px 0px 0.625rem
-        }
-        
-        .button:last-child,
-        .card-block:last-child:not(.multiple),
-        .card-footer:last-child:not(.multiple),
-        .card-header:last-child:not(.multiple),
-        .card:last-child,
-        .centerer:last-child,
-        .container:last-child,
-        .infobar:last-child,
-        .label:last-child,
-        .select:last-child,
-        .spacer:last-child,
-        .tagbox:last-child,
-        .widget:last-child,
-        address:last-child,
-        dl:last-child,
-        fieldset:last-child,
-        footer:last-child,
-        form:last-child,
-        h1:last-child,
-        h2:last-child,
-        h3:last-child,
-        h4:last-child,
-        h5:last-child,
-        h6:last-child,
-        header:last-child,
-        i.icon:last-child,
-        img:last-child,
-        input:last-child,
-        label:last-child,
-        ol:last-child,
-        p:last-child,
-        pre:last-child,
-        textarea:last-child,
-        ul:last-child {
-            margin-bottom: 0px
-        }
-        
-        * {
-            transition: opacity 0.15s ease 0s
-        }
-        
-        .xxlarge,
-        h1 {
-            font-size: 1.68176em
-        }
-        
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: inherit;
-            font-weight: 500
-        }
-        
-        .theme-light details {
-            background-color: #363636;
-            border-color: #1F1F1F;
-            color: #F6F6F6
-        }
-        
-        .theme-light details summary:hover:not(:active) {
-            background-color: #3E3E3E
-        }
-        
-        .theme-light details summary:active {
-            background-color: #2E2E2E
-        }
-        
-        .theme-light details summary::-webkit-details-marker {
-            background-image: url("data:image/svg+xml;utf8,<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><path fill=\"rgba(31,31,31,1)\" d=\"M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z\" /></svg>")
-        }
-        
-        .theme-light .preview {
-            background-color: #1F1F1F;
-            border-color: #000;
-            color: #F6F6F6;
-            height: 100vh;
-        }
-        
-        .theme-light .preview h1,
-        .theme-light .preview h2,
-        .theme-light .preview h3,
-        .theme-light .preview h4,
-        .theme-light .preview h5,
-        .theme-light .preview h6 {
-            border-color: #2F2F2F
-        }
-        
-        .theme-light .preview h1,
-        .theme-light .preview h2,
-        .theme-light .preview h3,
-        .theme-light .preview h4,
-        .theme-light .preview h5 {
-            color: inherit
-        }
-        
-        .preview {
-            font-size: 16px;
-            line-height: inherit;
-            user-select: text !important;
-            padding: 1.25rem !important
-        }
-        
-        .preview> :first-child {
-            margin-top: 0px !important
-        }
-        
-        .preview> :last-child {
-            margin-bottom: 0px !important
-        }
-        
-        .preview h1,
-        .preview h2,
-        .preview h3,
-        .preview h4,
-        .preview h5,
-        .preview h6 {
-            margin-top: 24px;
-            margin-bottom: 16px;
-            font-weight: 600;
-            line-height: 1.25
-        }
-        
-        .preview h1:last-child,
-        .preview h2:last-child,
-        .preview h3:last-child,
-        .preview h4:last-child,
-        .preview h5:last-child,
-        .preview h6:last-child {
-            margin-bottom: 0px
-        }
-        
-        .preview h1 {
-            font-size: 2em
-        }
-        
-        .preview h1,
-        .preview h2 {
-            padding-bottom: 0.3em;
-            border-bottom-width: 1px;
-            border-bottom-style: solid
-        }
-        
-        .preview details {
-            border-width: 1px;
-            border-style: solid;
-            border-radius: 3px;
-            padding: 0.625rem;
-            margin-bottom: 16px;
-            overflow: hidden
-        }
-        
-        .preview details[open] summary {
-            margin: -.625rem -.625rem .625rem
-        }
-        
-        .preview details summary {
-            font-weight: 600;
-            font-size: 0.840901em;
-            cursor: pointer;
-            padding: 0.625rem;
-            margin: -0.625rem
-        }
-        
-        .preview details summary::-webkit-details-marker {
-            background-position: 50% center;
-            background-size: 18px 18px;
-            width: 16px;
-            height: 16px;
-            color: transparent;
-            vertical-align: middle
-        }
+      * {
+        border-color: inherit;
+      }
+	  
+	  html {
+		background-color: #1f1f1f;
+	  }
+
+      *,
+      ::after,
+      ::before {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      ::after,
+      ::before {
+        flex-shrink: 1;
+      }
+
+      a,
+      area,
+      button,
+      input,
+      label,
+      select,
+      summary,
+      textarea {
+        touch-action: manipulation;
+      }
+
+      html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        text-size-adjust: 100%;
+      }
+
+      body {
+        margin: 0px;
+      }
+
+      h1 {
+        font-size: 2em;
+        margin: 0.67em 0px;
+      }
+
+      details,
+      menu {
+        display: block;
+      }
+
+      summary {
+        display: list-item;
+      }
+
+      html {
+        font-size: 16px;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      body,
+      html {
+        height: 100%;
+      }
+
+      body {
+        font-size: 1rem;
+        line-height: 1.375;
+        user-select: none !important;
+      }
+
+      body,
+      input,
+      textarea {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+          Arial, sans-serif;
+      }
+
+      body,
+      input,
+      textarea {
+        font-size: 16px;
+      }
+
+      .button,
+      .card,
+      .card-block:not(.multiple),
+      .card-footer:not(.multiple),
+      .card-header:not(.multiple),
+      .centerer,
+      .container,
+      .infobar,
+      .label,
+      .select,
+      .spacer,
+      .tagbox,
+      .widget,
+      address,
+      dl,
+      fieldset,
+      footer,
+      form,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      header,
+      i.icon,
+      img,
+      input,
+      label,
+      ol,
+      p,
+      pre,
+      textarea,
+      ul {
+        position: relative;
+        margin: 0px 0px 0.625rem;
+      }
+
+      .button:last-child,
+      .card-block:last-child:not(.multiple),
+      .card-footer:last-child:not(.multiple),
+      .card-header:last-child:not(.multiple),
+      .card:last-child,
+      .centerer:last-child,
+      .container:last-child,
+      .infobar:last-child,
+      .label:last-child,
+      .select:last-child,
+      .spacer:last-child,
+      .tagbox:last-child,
+      .widget:last-child,
+      address:last-child,
+      dl:last-child,
+      fieldset:last-child,
+      footer:last-child,
+      form:last-child,
+      h1:last-child,
+      h2:last-child,
+      h3:last-child,
+      h4:last-child,
+      h5:last-child,
+      h6:last-child,
+      header:last-child,
+      i.icon:last-child,
+      img:last-child,
+      input:last-child,
+      label:last-child,
+      ol:last-child,
+      p:last-child,
+      pre:last-child,
+      textarea:last-child,
+      ul:last-child {
+        margin-bottom: 0px;
+      }
+
+      * {
+        transition: opacity 0.15s ease 0s;
+      }
+
+      .xxlarge,
+      h1 {
+        font-size: 1.68176em;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: inherit;
+        font-weight: 500;
+      }
+
+      .theme-light details {
+        background-color: #363636;
+        border-color: #1f1f1f;
+        color: #f6f6f6;
+      }
+
+      .theme-light details summary:hover:not(:active) {
+        background-color: #3e3e3e;
+      }
+
+      .theme-light details summary:active {
+        background-color: #2e2e2e;
+      }
+
+      .theme-light details summary::-webkit-details-marker {
+        background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path fill="rgba(31,31,31,1)" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>');
+      }
+
+      .theme-light .preview {
+        background-color: #1f1f1f;
+        border-color: #000;
+        color: #f6f6f6;
+        height: 100vh;
+      }
+
+      .theme-light .preview h1,
+      .theme-light .preview h2,
+      .theme-light .preview h3,
+      .theme-light .preview h4,
+      .theme-light .preview h5,
+      .theme-light .preview h6 {
+        border-color: #2f2f2f;
+      }
+
+      .theme-light .preview h1,
+      .theme-light .preview h2,
+      .theme-light .preview h3,
+      .theme-light .preview h4,
+      .theme-light .preview h5 {
+        color: inherit;
+      }
+
+      .preview {
+        font-size: 16px;
+        line-height: inherit;
+        user-select: text !important;
+        padding: 1.25rem !important;
+      }
+
+      .preview > :first-child {
+        margin-top: 0px !important;
+      }
+
+      .preview > :last-child {
+        margin-bottom: 0px !important;
+      }
+
+      .preview h1,
+      .preview h2,
+      .preview h3,
+      .preview h4,
+      .preview h5,
+      .preview h6 {
+        margin-top: 24px;
+        margin-bottom: 16px;
+        font-weight: 600;
+        line-height: 1.25;
+      }
+
+      .preview h1:last-child,
+      .preview h2:last-child,
+      .preview h3:last-child,
+      .preview h4:last-child,
+      .preview h5:last-child,
+      .preview h6:last-child {
+        margin-bottom: 0px;
+      }
+
+      .preview h1 {
+        font-size: 2em;
+      }
+
+      .preview h1,
+      .preview h2 {
+        padding-bottom: 0.3em;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+      }
+
+      .preview details {
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 3px;
+        padding: 0.625rem;
+        margin-bottom: 16px;
+        overflow: hidden;
+      }
+
+      .preview details[open] summary {
+        margin: -0.625rem -0.625rem 0.625rem;
+      }
+
+      .preview details summary {
+        font-weight: 600;
+        font-size: 0.840901em;
+        cursor: pointer;
+        padding: 0.625rem;
+        margin: -0.625rem;
+      }
+
+      .preview details summary::-webkit-details-marker {
+        background-position: 50% center;
+        background-size: 18px 18px;
+        width: 16px;
+        height: 16px;
+        color: transparent;
+        vertical-align: middle;
+      }
     </style>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body class="theme-light" style="height:100vh;">
+  <body class="theme-light" style="height: 100vh">
     <div class="preview">
-        <h1 id="table-of-contents">Table of Contents</h1>
-        <details>
-            <summary><span style="color:darkviolet">AP Chemistry</span></summary>
-            <p><small><em>Chapters based on Barron's AP Chemistry book</em></small></p>
-            <p><a href="chem\chem1.html">Ch.1 Structure of the Atom</a></p>
-            <p><a href="chem\chem2.html">Ch.2 The Periodic Table</a></p>
-            <p><a href="chem\chem3.html">Ch.3 Ionic Compounds, Formulas, Reactions</a></p>
-            <p><a href="chem\chem4.html">Ch.4 Covalent Compounds, Formulas, Structures</a></p>
-            <p><a href="chem\chem5.html">Ch.5 Stoichiometry</a></p>
-            <p><a href="chem\chem6.html">Ch.6 Gases</a></p>
-            <p><a href="chem\chem7.html">Ch.7 Liquids and Solids</a></p>
-            <p><a href="chem\chem8.html">Ch.8 Solutions</a></p>
-            <p><a href="chem\chem9.html">Ch.9 Chemical Equilibrium</a></p>
-            <p><a href="chem\chem10.html">Ch.10 Kinetics</a></p>
-            <p><a href="chem\chem11.html">Ch.11 Thermodynamics</a></p>
-            <p><a href="chem\chem12.html">Ch.12 Oxidation-Reduction Reactions and Electrochemistry</a></p>
-            <p><a href="chem\chem13.html">Ch.13 Acids and Bases</a></p>
-        </details>
-        <details>
-            <summary><span style="color:deepskyblue">Multivariable Calculus</span></summary>
-            <p><small><em>Based on Georgia Tech MATH 2551</em></small></p>
-            <p><a href="multi\multi1.html"></a></p>
-        </details>
-        <details>
-            <summary><span style="color:orange">Linear Algebra with Abstract Vector Spaces</span></summary>
-            <p><small><em>Based on Georgia Tech MATH 1564</em></small></p>
-            <p><a href="linear\linear1.html">Ch.1 Linear Systems and Gauss's Method</a></p>
-            <p><a href="linear\linear2.html">Ch.2 Solving General Linear Systems</a></p>
-            <p><a href="linear\linear3.html">Ch.3 Linear Geometry</a></p>
-            <p><a href="linear\linear4.html">Ch.4 Vector Spaces</a></p>
-            <p><a href="linear\linear5.html">Ch.5 Spans and Basis</a></p>
-            <p><a href="linear\linear6.html">Ch.6 Dimension</a></p>
-            <p><a href="linear\linear7.html">Ch.7 Isomorphisms</a></p>
-            <p><a href="linear\linear8.html">Ch.8 Homomorphisms</a></p>
-            <p><a href="linear\linear9.html">Ch.9 Linear Maps as Matrices</a></p>
-            <p><a href="linear\linear10.html">Ch.10 Matrix Operations</a></p>
-            <p><a href="linear\linear11.html">Ch.11 Change of Basis</a></p>
-            <p><a href="linear\linear12.html">Ch.12 Orthogonal Projection</a></p>
-            <p><a href="linear\linear13.html">Ch.13 Determinants</a></p>
-            <p><a href="linear\linear14.html">Ch.14 Complex Vector Spaces</a></p>
-            <p><a href="linear\linear15.html">Ch.15 Eigenvectors</a></p>
-            <p><a href="linear\linear16.html">Ch.16 Polynomials of Matrices</a></p>
-            <p><a href="linear\linear17.html">Ch.17 Nilpotent Matrices and Jordan Canonical Form</a></p>
-            <p><a href="linear\linear18.html">Ch.18 Applications</a></p>
-        </details>
-        <details>
-            <summary><span style="color:blue">Discrete Mathematics</span></summary>
-            <p><small><em>Based on Georgia Tech CS 2051</em></small></p>
-            <p><a href="discrete\discrete1.html">Ch.1 Propositions and Truth Tables</a></p>
-            <p><a href="discrete\discrete2.html">Ch.2 Proof Techniques</a></p>
-            <p><a href="discrete\discrete3.html">Ch.3 Set Theory</a></p>
-            <p><a href="discrete\discrete4.html"></a></p>
-            <p><a href="discrete\discrete5.html"></a></p>
-            <p><a href="discrete\discrete6.html"></a></p>
-            <p><a href="discrete\discrete7.html"></a></p>
-            <p><a href="discrete\discrete8.html"></a></p>
-            <p><a href="discrete\discrete9.html"></a></p>
-            <p><a href="discrete\discrete10.html"></a></p>
-            <p><a href="discrete\discrete11.html"></a></p>
-        </details>
-        <details>
-            <summary><span style="color:red">Electricity and Magnetism</span></summary>
-            <p><small><em>Based on Georgia Tech PHYS 2212</em></small></p>
-            <p><a href="emag\emag1.html">Ch.1 Electric Charges and Force</a></p>
-            <p><a href="emag\emag2.html">Ch.2 Electric Field</a></p>
-            <p><a href="emag\emag3.html">Ch.3 Gauss's Law</a></p>
-            <p><a href="emag\emag4.html">Ch.4 Electric Potential</a></p>
-            <p><a href="emag\emag5.html">Ch.5 Potential and Field</a></p>
-            <p><a href="emag\emag6.html">Ch.6 Current and Resistance</a></p>
-            <p><a href="emag\emag7.html">Ch.7 Circuits</a></p>
-            <p><a href="emag\emag8.html">Ch.8 Magnetic Field</a></p>
-            <p><a href="emag\emag9.html">Ch.9 Electromagnetic Induction</a></p>
-            <p><a href="emag\emag10.html">Ch.10 Electromagnetic Fields and Waves</a></p>
-            <p><a href="emag\emagx.html">References</a></p>
-        </details>
+      <h1 id="table-of-contents">Table of Contents</h1>
+      <details>
+        <summary><span style="color: darkviolet">AP Chemistry</span></summary>
+        <p>
+          <small><em>Chapters based on Barron's AP Chemistry book</em></small>
+        </p>
+        <p><a href="chem\chem1.html">Ch.1 Structure of the Atom</a></p>
+        <p><a href="chem\chem2.html">Ch.2 The Periodic Table</a></p>
+        <p>
+          <a href="chem\chem3.html"
+            >Ch.3 Ionic Compounds, Formulas, Reactions</a
+          >
+        </p>
+        <p>
+          <a href="chem\chem4.html"
+            >Ch.4 Covalent Compounds, Formulas, Structures</a
+          >
+        </p>
+        <p><a href="chem\chem5.html">Ch.5 Stoichiometry</a></p>
+        <p><a href="chem\chem6.html">Ch.6 Gases</a></p>
+        <p><a href="chem\chem7.html">Ch.7 Liquids and Solids</a></p>
+        <p><a href="chem\chem8.html">Ch.8 Solutions</a></p>
+        <p><a href="chem\chem9.html">Ch.9 Chemical Equilibrium</a></p>
+        <p><a href="chem\chem10.html">Ch.10 Kinetics</a></p>
+        <p><a href="chem\chem11.html">Ch.11 Thermodynamics</a></p>
+        <p>
+          <a href="chem\chem12.html"
+            >Ch.12 Oxidation-Reduction Reactions and Electrochemistry</a
+          >
+        </p>
+        <p><a href="chem\chem13.html">Ch.13 Acids and Bases</a></p>
+      </details>
+      <details>
+        <summary>
+          <span style="color: deepskyblue">Multivariable Calculus</span>
+        </summary>
+        <p>
+          <small><em>Based on Georgia Tech MATH 2551</em></small>
+        </p>
+        <p><a href="multi\multi1.html"></a></p>
+      </details>
+      <details>
+        <summary>
+          <span style="color: orange"
+            >Linear Algebra with Abstract Vector Spaces</span
+          >
+        </summary>
+        <p>
+          <small><em>Based on Georgia Tech MATH 1564</em></small>
+        </p>
+        <p>
+          <a href="linear\linear1.html"
+            >Ch.1 Linear Systems and Gauss's Method</a
+          >
+        </p>
+        <p>
+          <a href="linear\linear2.html">Ch.2 Solving General Linear Systems</a>
+        </p>
+        <p><a href="linear\linear3.html">Ch.3 Linear Geometry</a></p>
+        <p><a href="linear\linear4.html">Ch.4 Vector Spaces</a></p>
+        <p><a href="linear\linear5.html">Ch.5 Spans and Basis</a></p>
+        <p><a href="linear\linear6.html">Ch.6 Dimension</a></p>
+        <p><a href="linear\linear7.html">Ch.7 Isomorphisms</a></p>
+        <p><a href="linear\linear8.html">Ch.8 Homomorphisms</a></p>
+        <p><a href="linear\linear9.html">Ch.9 Linear Maps as Matrices</a></p>
+        <p><a href="linear\linear10.html">Ch.10 Matrix Operations</a></p>
+        <p><a href="linear\linear11.html">Ch.11 Change of Basis</a></p>
+        <p><a href="linear\linear12.html">Ch.12 Orthogonal Projection</a></p>
+        <p><a href="linear\linear13.html">Ch.13 Determinants</a></p>
+        <p><a href="linear\linear14.html">Ch.14 Complex Vector Spaces</a></p>
+        <p><a href="linear\linear15.html">Ch.15 Eigenvectors</a></p>
+        <p><a href="linear\linear16.html">Ch.16 Polynomials of Matrices</a></p>
+        <p>
+          <a href="linear\linear17.html"
+            >Ch.17 Nilpotent Matrices and Jordan Canonical Form</a
+          >
+        </p>
+        <p><a href="linear\linear18.html">Ch.18 Applications</a></p>
+      </details>
+      <details>
+        <summary><span style="color: blue">Discrete Mathematics</span></summary>
+        <p>
+          <small><em>Based on Georgia Tech CS 2051</em></small>
+        </p>
+        <p>
+          <a href="discrete\discrete1.html"
+            >Ch.1 Propositions and Truth Tables</a
+          >
+        </p>
+        <p><a href="discrete\discrete2.html">Ch.2 Proof Techniques</a></p>
+        <p><a href="discrete\discrete3.html">Ch.3 Set Theory</a></p>
+        <p><a href="discrete\discrete4.html"></a></p>
+        <p><a href="discrete\discrete5.html"></a></p>
+        <p><a href="discrete\discrete6.html"></a></p>
+        <p><a href="discrete\discrete7.html"></a></p>
+        <p><a href="discrete\discrete8.html"></a></p>
+        <p><a href="discrete\discrete9.html"></a></p>
+        <p><a href="discrete\discrete10.html"></a></p>
+        <p><a href="discrete\discrete11.html"></a></p>
+      </details>
+      <details>
+        <summary>
+          <span style="color: red">Electricity and Magnetism</span>
+        </summary>
+        <p>
+          <small><em>Based on Georgia Tech PHYS 2212</em></small>
+        </p>
+        <p><a href="emag\emag1.html">Ch.1 Electric Charges and Force</a></p>
+        <p><a href="emag\emag2.html">Ch.2 Electric Field</a></p>
+        <p><a href="emag\emag3.html">Ch.3 Gauss's Law</a></p>
+        <p><a href="emag\emag4.html">Ch.4 Electric Potential</a></p>
+        <p><a href="emag\emag5.html">Ch.5 Potential and Field</a></p>
+        <p><a href="emag\emag6.html">Ch.6 Current and Resistance</a></p>
+        <p><a href="emag\emag7.html">Ch.7 Circuits</a></p>
+        <p><a href="emag\emag8.html">Ch.8 Magnetic Field</a></p>
+        <p><a href="emag\emag9.html">Ch.9 Electromagnetic Induction</a></p>
+        <p>
+          <a href="emag\emag10.html">Ch.10 Electromagnetic Fields and Waves</a>
+        </p>
+        <p><a href="emag\emagx.html">References</a></p>
+      </details>
+      <details>
+        <summary><span style="color: yellow">Objects and Design</span></summary>
+        <p>
+          <small><em>Based on Georgia Tech CS 2340</em></small>
+        </p>
+        <p><a href="objdes\objdes1.html">Ch.1 Agile, XP, Scrum</a></p>
+        <p>
+          <a href="objdes\objdes2.html"
+            >Ch.2 Requirements Analysis and Domain Models</a
+          >
+        </p>
+        <p>
+          <a href="objdes\objdes3.html">Ch.3 Test Driven Development (TDD)</a>
+        </p>
+        <p><a href="objdes\objdes4.html">Ch.4 Documenting Requirements</a></p>
+        <p><a href="objdes\objdes5.html">Ch.5 Teamwork</a></p>
+        <p><a href="objdes\objdes6.html">Ch.6 Sequence Diagrams</a></p>
+        <p><a href="objdes\objdes7.html">Ch.7 Review</a></p>
+      </details>
     </div>
-</body>
-
+  </body>
 </html>
